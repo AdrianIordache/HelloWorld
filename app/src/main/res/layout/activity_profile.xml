@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".ProfileActivity">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_user_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/profile_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_below="@+id/profile_user_image"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/profile_user_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey, I'm using Hello World..."
+        android:layout_below="@+id/profile_user_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/profile_send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_user_status"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Send Request"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        />
+
+    <Button
+        android:id="@+id/profile_decline_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_send_request"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Cancel Request"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
